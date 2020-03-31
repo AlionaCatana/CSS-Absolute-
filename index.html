@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position Absolute</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body{
+        margin: 0;
+        padding: 0;  
+        background-color: #222;
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        text-align: center;
+    }
+    #d-1{
+        background-color: #156d86;
+        position: relative;
+        z-index: 2;
+    }
+    #d-2{
+        background-color: #b67cdd;
+        position: absolute;
+        left: 50px;
+        top: 50px;
+        z-index: 1;
+    }
+    #d-3{
+        background-color: #848484;
+        position: absolute;
+        left: 100px;
+        top: 100px;
+    }
+    div span{
+        position: relative;
+        top: 32px;
+        font-family: sans-serif;
+        font-size: 36px;
+    }
+    </style>   
+</head>
+<body>
+    <div id="d-1"><span>1</span></div>
+    <div id="d-2"><span>2</span></div>
+    <div id="d-3"><span>3</span></div>
+</body>
+</html>
